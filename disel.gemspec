@@ -1,4 +1,4 @@
-Gem::Specification.new do |s|
+Gem::Specification.new do |spec|
   spec.name          = 'disel_router'
   spec.version       = '0.0.1'
   spec.date          = '2016-05-05'
