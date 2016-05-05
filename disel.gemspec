@@ -3,7 +3,7 @@ Gem::Specification.new do |spec|
   spec.version       = '0.0.1'
   spec.date          = '2016-05-05'
   spec.summary       = 'Separates your Sinatra routes from controllers'
-  spec.description   = 'Allows you to define your routes in separate modules and them mix them into controllers'
+  spec.description   = 'Allows you to define application routes in separate modules and then mix them into controllers'
   spec.authors       = ['Yury Solovyov']
   spec.platform      = Gem::Platform::CURRENT
   spec.email         = 'biohazard707@gmail.com'
