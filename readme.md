@@ -15,7 +15,7 @@ module HelloRoutes
   route :get, '/', :index
 end
 
-class HelloController < Sinatra::Base
+class HelloController < Sinatra::Base # Sinatra::Application works too
   include HelloRoutes
 
   def index
