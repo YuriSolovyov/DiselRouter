@@ -1,5 +1,5 @@
-require 'sinatra/base'
-require 'disel_router'
+require "sinatra/base"
+require "disel_router"
 
 module HelloRoutes
   include Disel::Router
