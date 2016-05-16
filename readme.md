@@ -1,7 +1,5 @@
 # DiselRouter
 
-## WIP, use on your own risk
-
 DiselRouter is a module that allows you to separate routes from controllers in
 your Sinatra application.
 
