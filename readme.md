@@ -35,6 +35,9 @@ end
 
 class HelloController < Sinatra::Base
   include HelloRoutes
+  def index
+    'Hello!'
+  end
 end
 ```
 
@@ -48,5 +51,7 @@ class HelloController < Sinatra::Base
 end
 ```
 if body of a block was an `:index` method
+
+### License
 
 MIT © Yury Solovyov
