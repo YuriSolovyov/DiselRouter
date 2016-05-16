@@ -48,3 +48,5 @@ class HelloController < Sinatra::Base
 end
 ```
 if body of a block was an `:index` method
+
+MIT © Yury Solovyov
