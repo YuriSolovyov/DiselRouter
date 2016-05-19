@@ -1,6 +1,7 @@
 require "spec_helper"
 
 describe "router engine" do
+  include Rack::Test::Methods
 
   describe "when included to module" do
 
@@ -33,6 +34,36 @@ describe "router engine" do
       expect(ctrl).to receive(:delete).with('/:id/delete')
 
       ctrl.include(routes)
+    end
+
+    def app
+      controller.class_eval do
+        def index
+          "index"
+        end
+
+        def add_post
+          "add_post"
+        end
+
+        def delete_post(id)
+          "delete_post_#{id}"
+        end
+      end
+      controller.include(routes)
+    end
+
+    it "should make controller respond to actions" do
+
+      get '/'
+      expect(last_response.body).to eq('index')
+
+      post '/create'
+      expect(last_response.body).to eq('add_post')
+
+      delete '/42/delete'
+      expect(last_response.body).to eq('delete_post_42')
+
     end
 
   end
