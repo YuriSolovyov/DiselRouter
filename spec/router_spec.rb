@@ -1,7 +1,6 @@
 require "spec_helper"
 
 describe "router engine" do
-  include Rack::Test::Methods
 
   describe "when included to module" do
 
