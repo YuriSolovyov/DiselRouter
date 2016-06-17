@@ -3,6 +3,16 @@
 DiselRouter is a module that allows you to separate routes from controllers in
 your Sinatra application.
 
+## Install:
+Via gem:
+```
+gem install disel_router
+```
+Via Gemfile:
+```
+gem 'disel_router', '~> 0.0.2'
+```
+
 Example usage:
 ```ruby
 require 'sinatra/base'
