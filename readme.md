@@ -1,5 +1,5 @@
 # DiselRouter
-[![Codeship CI status](https://img.shields.io/codeship/02d1c690-fdb4-0133-d27c-367994a53831.svg?maxAge=2592000)](https://codeship.com/projects/152272)
+[![Codeship CI status](https://img.shields.io/codeship/02d1c690-fdb4-0133-d27c-367994a53831.svg)](https://codeship.com/projects/152272)
 
 DiselRouter is a module that allows you to separate routes from controllers in
 your Sinatra application.
